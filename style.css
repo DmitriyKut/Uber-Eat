@@ -1,0 +1,23 @@
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 20px 87px 30px 82px;
+}
+
+.right_part_header {
+    padding: 0px 87px 0px 16px;
+}
+
+.login {
+    background-color: #ffffff;
+    border: 2px solid rgba(224, 224, 224, 1);
+    padding: 7px 20px;
+}
