@@ -47,7 +47,7 @@ a.text {
     color: black;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 900px) {
     .logo {
         padding: 20px 8px 30px 8px;
     }
@@ -72,7 +72,7 @@ a.text {
     padding: 0px 81px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 900px) {
     .contanier {
         padding: 0px 8px;
     }
@@ -112,13 +112,13 @@ a.text {
     row-gap: 16px;      /* Отступ между рядами */
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
     #row_body {
         grid-template-columns: auto auto;
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 575px) {
     #row_body {
         grid-template-columns: auto;
     }
@@ -168,15 +168,23 @@ footer {
     margin-top: 80px;
 }
 
+@media (max-width: 900px) {
+    footer {
+        padding: 0px 8px;
+    }
+}
+
 .footer_header {
     padding: 56px 0px 40px 0px;
 }
 
 #first_line {
+    margin: 0;
     margin-top: 40px;
+    padding: 0;
 }
 
-#container_footer, #row_footer, #col_footer {
+.footer_body, #container_footer, #row_footer, #col_footer {
     padding: 0;
     margin: 0;
 }
@@ -239,6 +247,18 @@ footer {
     padding: 12px 128px 12px 45px;
 }
 
+@media (max-width: 900px) {
+    .select_wrapper::before {
+        left: 150px;
+    }
+    .select_wrapper::after {
+        left: 156px;
+    }
+    #lang {
+        padding: 12px 70px 12px 45px;
+    }
+}
+
 .reg {
     display: flex;
     padding-top: 33px;
@@ -271,10 +291,16 @@ footer {
     padding-right: 12px;
 }
 
+@media (max-width: 575px) {
+    .society {
+        padding-bottom: 25px;
+    }
+}
+
 .footer_body_text {
     display: block;
-    padding-top: 10px;
-    padding-bottom: 13px;
+    margin: 0;
+    padding: 10px 0px 13px 0px;
     font-family: Roboto, sans-serif;
     font-weight: 400;
     font-size: 13px;
@@ -283,8 +309,15 @@ footer {
     color: rgb(255, 255, 255);
 }
 
+.col-lg-4 {
+    padding: 0;
+    margin: 0;
+}
+
 #second_line {
-    margin-top: 48px;
+    margin: 0;
+    padding: 0;
+    margin-top: 38px;
 }
 
 .footer_download {
@@ -297,11 +330,23 @@ footer {
     margin-right: 40px;
 }
 
+@media (max-width: 575px) {
+    #appstore {
+        width: 109px;
+        height: 36px;
+    }
+    #playmarket {
+        width: 124px;
+        height: 36px;
+    }
+}
+
 .footer_footer {
-    padding: 30px 0px 40px 0px;
+    padding: 30px 0px 16px 0px;
 }
 
 .footer_footer_text {
+    padding-bottom: 24px;
     font-family: Roboto, sans-serif;
     font-weight: 400;
     font-size: 11px;
