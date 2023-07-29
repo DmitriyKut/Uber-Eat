@@ -308,3 +308,11 @@ footer {
     line-height: 12.89px;
     color: rgb(255, 255, 255);
 }
+
+#nav {
+    display: flex;
+    position: fixed;
+    bottom: 24px;
+    right: 16px;
+    z-index: 50;
+}
