@@ -45,6 +45,7 @@ a.text {
     height: 40px;
     width: 78px;
     color: black;
+    cursor: pointer;
 }
 
 @media (max-width: 900px) {

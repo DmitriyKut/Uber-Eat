@@ -19,7 +19,7 @@
       rel="stylesheet"
       href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css"
     />
-
+    <script src="script.js"></script>
     <link rel="stylesheet" href="pushkin.css" />
 
     <title>Inn Pushkin</title>
@@ -38,8 +38,8 @@
           <div class="col-lg-5 col-md-7 col-12">
             <div class="face">
               <div class="name">Трактир &#171;Пушкин&#187;</div><div class="container">
-                <div class="row">
-                  <div class="col-6">
+                <div class="row" id="data">
+                  <div class="col-6" id="data">
                     <div class="cost">&#8381;&#8381;&#8381; &#8226; Европейская</div>
                   </div>
                   <div class="col-6" id="subrow_time">
@@ -52,5 +52,23 @@
         </div>
       </div>
     </div>
+    <div class="menu">
+      <button type="button" class="nav">Закуски</button>
+      <button type="button" class="nav">Салаты</button>
+      <button type="button" class="nav">Супы</button>
+      <button type="button" class="nav">Горячие блюда</button>
+      <button type="button" class="nav">Гарниры</button>
+      <button type="button" class="nav">Десерты</button>
+    </div>
+    <hr class="header_line">
+    <div class="mobile_menu">
+      <button type="button" class="nav nav1" id="nav1">Закуски</button>
+      <button type="button" class="nav nav2" id="nav2">Салаты</button>
+      <button type="button" class="nav nav3" id="nav3">Супы</button>
+      <button type="button" class="nav nav4" id="nav4">Горячие блюда</button>
+      <button type="button" class="nav nav5" id="nav5">Гарниры</button>
+      <button type="button" class="nav nav6" id="nav6">Десерты</button>
+    </div>
+    <div class="line_contanier"><div class="menu_line"></div></div>
   </body>
   </html>
