@@ -19,6 +19,8 @@
       rel="stylesheet"
       href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css"
     />
+    <!--Подключение JQuery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="script.js"></script>
     <link rel="stylesheet" href="pushkin.css" />
 
@@ -53,22 +55,30 @@
       </div>
     </div>
     <div class="menu">
-      <button type="button" class="nav">Закуски</button>
-      <button type="button" class="nav">Салаты</button>
-      <button type="button" class="nav">Супы</button>
-      <button type="button" class="nav">Горячие блюда</button>
-      <button type="button" class="nav">Гарниры</button>
-      <button type="button" class="nav">Десерты</button>
+      <button type="button" class="nav menu1">Закуски</button>
+      <button type="button" class="nav menu2">Салаты</button>
+      <button type="button" class="nav menu3">Супы</button>
+      <button type="button" class="nav menu4">Горячие блюда</button>
+      <button type="button" class="nav menu5">Гарниры</button>
+      <button type="button" class="nav menu6">Десерты</button>
     </div>
     <hr class="header_line">
     <div class="mobile_menu">
-      <button type="button" class="nav nav1" id="nav1">Закуски</button>
-      <button type="button" class="nav nav2" id="nav2">Салаты</button>
-      <button type="button" class="nav nav3" id="nav3">Супы</button>
-      <button type="button" class="nav nav4" id="nav4">Горячие блюда</button>
-      <button type="button" class="nav nav5" id="nav5">Гарниры</button>
-      <button type="button" class="nav nav6" id="nav6">Десерты</button>
+      <div class="but"><button type="button" class="nav nav1">Закуски</button></div>
+      <div class="but"><button type="button" class="nav nav2">Салаты</button></div>
+      <div class="but"><button type="button" class="nav nav3">Супы</button></div>
+      <div class="but"><button type="button" class="nav nav4">Горячие блюда</button></div>
+      <div class="but"><button type="button" class="nav nav5">Гарниры</button></div>
+      <div class="but"><button type="button" class="nav nav6">Десерты</button></div>
+      <div class="but"><div class="menu_line"></div></div>
     </div>
-    <div class="line_contanier"><div class="menu_line"></div></div>
+    <div class="content_contanier">
+      <div class="partion partion1">Закуски</div>
+      <div class="partion partion2">Салаты</div>
+      <div class="partion partion3">Супы</div>
+      <div class="partion partion4">Горячие блюда</div>
+      <div class="partion partion5">Гарниры</div>
+      <div class="partion partion6">Десерты</div>
+    </div>
   </body>
   </html>
