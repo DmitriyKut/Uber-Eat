@@ -36,4 +36,51 @@ $(document).ready(function() {
 });
 /////////////////////////////////////////////////Main menu///////////////////////////////////////////////////////////////////////////
 
+$(document).ready(function() {
+    $('.menu1').click(function(event) {
+        $('.partion1,.partion2,.partion3,.partion4,.partion5,.partion6').removeClass('active_partion');
+        $('.partion1,.partion2,.partion3,.partion4,.partion5,.partion6').addClass('hide');
+        $('.partion1').addClass('active_partion');
+    });
+});
+
+$(document).ready(function() {
+    $('.menu2').click(function(event) {
+        $('.partion1,.partion2,.partion3,.partion4,.partion5,.partion6').removeClass('active_partion');
+        $('.partion1,.partion2,.partion3,.partion4,.partion5,.partion6').addClass('hide');
+        $('.partion2').addClass('active_partion');
+    });
+});
+
+$(document).ready(function() {
+    $('.menu3').click(function(event) {
+        $('.partion1,.partion2,.partion3,.partion4,.partion5,.partion6').removeClass('active_partion');
+        $('.partion1,.partion2,.partion3,.partion4,.partion5,.partion6').addClass('hide');
+        $('.partion3').addClass('active_partion');
+    });
+});
+
+$(document).ready(function() {
+    $('.menu4').click(function(event) {
+        $('.partion1,.partion2,.partion3,.partion4,.partion5,.partion6').removeClass('active_partion');
+        $('.partion1,.partion2,.partion3,.partion4,.partion5,.partion6').addClass('hide');
+        $('.partion4').addClass('active_partion');
+    });
+});
+
+$(document).ready(function() {
+    $('.menu5').click(function(event) {
+        $('.partion1,.partion2,.partion3,.partion4,.partion5,.partion6').removeClass('active_partion');
+        $('.partion1,.partion2,.partion3,.partion4,.partion5,.partion6').addClass('hide');
+        $('.partion5').addClass('active_partion');
+    });
+});
+
+$(document).ready(function() {
+    $('.menu6').click(function(event) {
+        $('.partion1,.partion2,.partion3,.partion4,.partion5,.partion6').removeClass('active_partion');
+        $('.partion1,.partion2,.partion3,.partion4,.partion5,.partion6').addClass('hide');
+        $('.partion6').addClass('active_partion');
+    });
+});
 
