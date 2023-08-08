@@ -129,6 +129,10 @@ a.text {
     margin: 0;
 }
 
+.menu1, .menu2, .menu3, .menu4, .menu5 {
+    margin-right: 40px;
+}
+
 .nav, .nav:active, .nav:focus {
     outline: none;                          /*Убирает обводку у button при клике*/
 }
@@ -148,7 +152,6 @@ a.text {
     text-align: center;
     white-space: nowrap;
     cursor: pointer;
-    margin-right: 40px;
 }
 
 @media (max-width: 900px) {
