@@ -362,3 +362,10 @@ footer {
     right: 16px;
     z-index: 50;
 }
+
+@media (max-width: 575px) {
+    #nav {
+        width: 64px;
+        height: 64px;
+    }
+}

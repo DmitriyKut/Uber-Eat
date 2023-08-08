@@ -141,7 +141,6 @@ a.text {
     background: none;
     border: none;
     padding: 0;
-    margin-right: 40px;
     font-family: Roboto, sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -149,6 +148,7 @@ a.text {
     text-align: center;
     white-space: nowrap;
     cursor: pointer;
+    margin-right: 40px;
 }
 
 @media (max-width: 900px) {
@@ -227,7 +227,6 @@ a.text {
     height: 1px;
     width: 50px;
     background-color: rgb(117, 117, 117);
-    margin-right: 38px;
     margin-top: 10px;
 }
 
@@ -307,7 +306,8 @@ a.text {
 
 @media (max-width: 900px) {
     #row_body {  
-        row-gap: 32px;      
+        row-gap: 32px;
+        padding-right: 6px; 
     }
 }
 
@@ -368,24 +368,43 @@ a.text {
     }
 }
 
+/************************************************Адаптация карточек товаров под мобильные устройства**************************************/
 
+@media (max-width: 575px) {
+    #card {
+        border: none;
+        border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+        background: none;
+    }
 
+    #row_body {
+        padding-right: 4px;
+    }
 
+    .card_info {
+        padding: 0;
+        max-width: 206px;
+    }
 
+    .food {
+        font-family: Roboto, sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+    }
 
+    .price {
+        bottom: 15px;
+        left: 0px;
+    }
 
+    .picture {
+        width: 102px;
+        height: 102px;
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
+/******************************************************************************************************************************************/
 footer {
     background-color: rgba(38, 38, 38, 1);
     padding: 0px 81px;
@@ -395,6 +414,12 @@ footer {
 @media (max-width: 900px) {
     footer {
         padding: 0px 8px;
+    }
+}
+
+@media (max-width: 575px) {
+    footer {
+        margin-top: 40px;
     }
 }
 
@@ -584,4 +609,11 @@ footer {
     bottom: 24px;
     right: 16px;
     z-index: 50;
+}
+
+@media (max-width: 575px) {
+    #nav {
+        width: 64px;
+        height: 64px;
+    }
 }
