@@ -143,6 +143,7 @@ a.text {
 
 .nav {
     background: none;
+    color: black;
     border: none;
     padding: 0;
     font-family: Roboto, sans-serif;
@@ -343,7 +344,7 @@ a.text {
     font-family: Roboto, sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 10px;
 }
 
 .special {
@@ -353,6 +354,38 @@ a.text {
     font-size: 13px;
     line-height: 21px;
     color: #626262;
+}
+
+@media (max-width: 320px) {
+    .special {
+        display: none;
+    }
+}
+
+.items_counter-wrapper {
+    display: flex;
+    position: absolute;
+    bottom: 16px;
+    left: 80px;
+    z-index: 50;
+}
+
+.items_control {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    padding: 0px 5px;
+    background-color: rgb(102, 212, 103);
+}
+
+.items_current {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    padding: 0px 16px;
+    background-color: #FFFFFF;
 }
 
 .price {
