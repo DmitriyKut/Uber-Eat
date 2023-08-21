@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 *,*::after,*::before {
     margin: 0;
     padding: 0;
@@ -356,7 +358,7 @@ a.text {
     color: #626262;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 575px) {
     .special {
         display: none;
     }
@@ -365,9 +367,8 @@ a.text {
 .items_counter-wrapper {
     display: flex;
     position: absolute;
-    bottom: 16px;
+    bottom: 65px;
     left: 80px;
-    z-index: 50;
 }
 
 .items_control {
@@ -395,8 +396,31 @@ a.text {
     font-size: 15px;
     line-height: 21px;
     position: absolute;
+    bottom: 65px;
+    left: 16px;
+}
+
+.card_button {
+    background-color: #ffffff;
+    border: 2px solid rgb(102, 212, 103);
+    border-radius: 3px;
+    padding: 7px 20px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: normal;
+    text-align: center;
+    white-space: nowrap;
+    color: black;
+    cursor: pointer;
+    position: absolute;
     bottom: 16px;
     left: 16px;
+}
+
+.card_button:active, .card_button:focus {
+    outline: none;
+    border: 2px solid rgb(255, 166, 32);
 }
 
 @media (max-width: 1000px) {
@@ -427,12 +451,25 @@ a.text {
         font-family: Roboto, sans-serif;
         font-weight: 400;
         font-size: 14px;
-        line-height: 24px;
+        line-height: 15px;
     }
 
     .price {
-        bottom: 15px;
+        bottom: 45px;
         left: 0px;
+    }
+
+    .items_counter-wrapper {
+        bottom: 45px;
+        left: 64px;
+    }
+
+    .card_button {
+        bottom: 3px;
+        left: 0px;
+        padding: 3px 15px;
+        margin: 0;
+        pointer-events: unset;
     }
 
     .picture {
