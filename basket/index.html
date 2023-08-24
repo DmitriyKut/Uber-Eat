@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!--Делает страницу адаптивной-->
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!--Бутстрап адаптивный мета-тег-->
+    <script src="../vendor/js/jquery-3.3.1.slim.min.js" defer></script>
+    <!--Подключение локальных файлов Бутстрап-->
+    <script src="../vendor/js/popper.min.js" async></script>
+    <link rel="stylesheet" href="../vendor/css/bootstrap.min.css" />
+    <script scr="../vendor/js/bootstrap.min.js" defer></script>
+    <!--Подключение JQuery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <link rel="stylesheet" href="basket.css" />
+
+    <title>Uber-Eats-Basket</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo"><img src="../logo.svg" width="125" height="18" /></div>
+      <div class="right_part_header">
+        <button type="button" class="login">Войти</button>
+        <a href="../restaurants/index.html"><img src="../shop.png" width="27" height="27" id="basket"/></a>
+      </div>
+    </div>
+    <div class="basket">
+      <div class="basket_content">
+        <b>Ваш заказ:</b>
+      </div>
+      <hr>
+      <div class="order">
+        <div class="nun">
+          В корзине пусто, закажите что-нибудь.
+        </div>
+      </div>
+      <hr>
+      <div class="basket_footer">
+        <div class="sum"><b>Итого:</b></div>
+        <div class="text">Укажите адрес доставки:<span class="star">*</span></div>
+        <input type="text" id="adress" name="adress">
+        <div class="text">Укажите номер телефона для связи:<span class="star">*</span></div>
+        <input type="text" id="number" name="number">
+        <button class="order_button">Заказать</button>
+      </div>
+    </div>
+    <footer>
+      <div class="footer_header">
+        <img src="../white-logo.svg" width="191" height="20"/>
+        <hr size="1" width="100%" color="grey" id="first_line">
+      </div>
+      <div class="footer_body">
+        <div class="contanier" id="container_footer">
+          <div class="row" id="row_footer">
+            <div class="col-lg-4 col-md-4 col-12" id="col_footer">
+              <div class="select_wrapper">
+                <img src="../world.svg" width="16" height="16" id="world"/>
+                <select name="language" id="lang">
+                  <option value="russian">Русский</option>
+                  <option value="english">English</option>
+                </select>
+              </div>
+              <div class="reg">
+                <div class="hash">#</div>
+                <div class="low_logo">UberEats</div>
+              </div>
+              <div class="society">
+                <div class="img"><a href="#"><img src="../facebook.svg" width="24" height="24"/></a></div>
+                <div class="img"><a href="#"><img src="../twitter.svg" width="24" height="24"/></a></div>
+                <div class="img"><a href="#"><img src="../instagram.svg" width="24" height="24"/></a></div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+              <div class="footer_body_text"><a href="#" class="text">Об UberEats</a></div>
+              <div class="footer_body_text"><a href="#" class="text">Станьте партнёром по доставке</a></div>
+              <div class="footer_body_text"><a href="#" class="text">Станьте парнёром-рестораном</a></div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+              <div class="footer_body_text"><a href="#" class="text">Все города</a></div>
+              <div class="footer_body_text"><a href="#" class="text">Цены</a></div>
+              <div class="footer_body_text"><a href="#" class="text">Помощь</a></div>
+              <div class="footer_body_text"><a href="#" class="text">FAQs</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr size="1" width="100%" color="grey" id="second_line">
+      <div class="footer_download">
+        <a href="#"><img src="../AppStore.svg" width="121" height="40" id="appstore"></a>
+        <a href="#"><img src="../PlayMarket.svg" width="135" height="40" id="playmarket"></a>
+      </div>
+      <hr size="1" width="100%" color="grey" id="second_line">
+      <div class="footer_footer">
+        <div class="contanier" id="container_footer">
+          <div class="row" id="row_footer">
+            <div class="col-lg-4 col-md-4 col-12">
+              <div class="footer_footer_text"><a href="#" class="text">&copy; 2017 Uber Technologies Inc.</a></div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+              <div class="footer_footer_text"><a href="#" class="text">Обработка персональных данных</a></div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+              <div class="footer_footer_text"><a href="#" class="text">Пользовательское соглашение</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

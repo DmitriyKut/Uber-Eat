@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+}
+
+a.text:active, /* активная/посещенная ссылка */
+a.text:hover,  /* при наведении */
+a.text {
+  text-decoration: none;
+  color: unset;
+}
+
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    width: 100%;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+    box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+    height: 72px;
+}
+
+.logo {
+    padding: 20px 87px 30px 82px;
+}
+
+.right_part_header {
+    padding: 18px 116px 0px 16px;
+}
+
+.login {
+    background-color: #ffffff;
+    border: 2px solid rgba(224, 224, 224, 1);
+    border-radius: 3px;
+    padding: 7px 20px;
+    margin-right: 15px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: normal;
+    text-align: center;
+    height: 40px;
+    width: 78px;
+    color: black;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .logo {
+        padding: 20px 8px 30px 8px;
+    }
+    
+    .right_part_header {
+        padding: 18px 10px 0px 16px;
+    }
+}
+
+@media (max-width: 575px) {
+    .login {
+        display: none;
+    }
+}
+
+.basket {
+    padding-top: 72px;
+    position: relative;
+}
+
+.basket_content {
+    padding: 20px 81px 20px 81px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: normal;
+    color: black;
+    background-color: rgba(216, 216, 216, 0.2);
+}
+
+hr {
+    border: 1px solid rgb(180, 180, 180);
+    margin: 0;
+    padding: 0;
+}
+
+.order {
+    padding: 20px 81px 0px 81px;
+    min-height: 350px;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: normal;
+}
+
+.basket_footer {
+    padding: 0px 81px 20px 81px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: rgba(216, 216, 216, 0.2);
+    height: 100%;
+}
+
+.sum {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#adress {
+    width: 90%;
+    min-width: 260px;
+    margin: 10px 0px;
+}
+
+@media (max-width: 900px) {
+    #adress {
+        width: 100%;
+    }
+}
+
+#number {
+    display: block;
+    margin: 10px 0px;
+    width: 260px;
+}
+
+.text {
+    padding-top: 7px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: normal;
+}
+
+.star {
+    color: red;
+}
+
+.order_button {
+    background-color: #ffffff;
+    border: 2px solid rgb(102, 212, 103);
+    border-radius: 3px;
+    padding: 7px 20px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+    white-space: nowrap;
+    color: black;
+    cursor: pointer;
+}
+
+.order_button:active, .order_button:focus {
+    outline: none;
+    border: 2px solid rgb(255, 166, 32);
+}
+
+@media (max-width: 900px) {
+    .basket_content {
+        padding-left: 8px;
+    }
+
+    .order {
+        padding-left: 8px;
+    }
+
+    .basket_footer {
+        padding-left: 8px;
+    }
+}
+
+footer {
+    background-color: rgba(38, 38, 38, 1);
+    padding: 0px 81px;
+}
+
+@media (max-width: 900px) {
+    footer {
+        padding: 0px 8px;
+    }
+}
+
+.footer_header {
+    padding: 56px 0px 40px 0px;
+}
+
+#first_line {
+    margin: 0;
+    margin-top: 40px;
+    padding: 0;
+}
+
+.footer_body, #container_footer, #row_footer, #col_footer {
+    padding: 0;
+    margin: 0;
+}
+
+/*Родительский div для стрелочки select*/
+.select_wrapper {
+    position: relative;
+}
+
+/*Создание стрелки select*/
+.select_wrapper::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 209px;
+    transform: translateY(-50%);
+    transform: rotate(45deg);
+    display: block;
+    width: 10.6px;
+    height: 2px;
+    background-color: #FFFFFF;
+    /*Делает стрелку прозрачной (некликабельной)*/
+    pointer-events: none;
+}
+
+.select_wrapper::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 215px;
+    transform: translateY(-50%);
+    transform: rotate(-45deg);
+    display: block;
+    width: 10.6px;
+    height: 2px;
+    background-color: #FFFFFF;
+    /*Делает стрелку прозрачной (некликабельной)*/
+    pointer-events: none;
+}
+
+#world {
+    content: "";
+    position: absolute;
+    top: 35%;
+    left: 16px;
+    display: block;
+}
+
+#lang {
+    /*Отключение стандартной стрелочки браузеров*/
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    /*Настройка select*/
+    background-color: rgb(55, 55, 55);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 1px;
+    outline: none;
+    padding: 12px 128px 12px 45px;
+}
+
+@media (max-width: 900px) {
+    .select_wrapper::before {
+        left: 150px;
+    }
+    .select_wrapper::after {
+        left: 156px;
+    }
+    #lang {
+        padding: 12px 70px 12px 45px;
+    }
+}
+
+.reg {
+    display: flex;
+    padding-top: 33px;
+}
+
+.hash {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.75px;
+    background: none;
+    color: rgb(73, 161, 68);
+}
+
+.low_logo {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.75px;
+    background: none;
+    color: rgb(255, 255, 255);
+}
+
+.society {
+    display: flex;
+    padding-top: 17px;
+}
+
+.img {
+    padding-right: 12px;
+}
+
+@media (max-width: 575px) {
+    .society {
+        padding-bottom: 25px;
+    }
+}
+
+.footer_body_text {
+    display: block;
+    margin: 0;
+    padding: 10px 0px 13px 0px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15.23px;
+    background: none;
+    color: rgb(255, 255, 255);
+}
+
+.col-lg-4 {
+    padding: 0;
+    margin: 0;
+}
+
+#second_line {
+    margin: 0;
+    padding: 0;
+    margin-top: 38px;
+}
+
+.footer_download {
+    display: block;
+    padding-top: 30px;
+    text-align: center;
+}
+
+#appstore {
+    margin-right: 40px;
+}
+
+@media (max-width: 575px) {
+    #appstore {
+        width: 109px;
+        height: 36px;
+    }
+    #playmarket {
+        width: 124px;
+        height: 36px;
+    }
+}
+
+.footer_footer {
+    padding: 30px 0px 16px 0px;
+}
+
+.footer_footer_text {
+    padding-bottom: 24px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 12.89px;
+    color: rgb(255, 255, 255);
+}
