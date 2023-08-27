@@ -81,6 +81,17 @@ a.text {
     background-color: rgba(216, 216, 216, 0.2);
 }
 
+.fix {
+    position: absolute;
+    left: 0px;
+    top: 140px;
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+    height: 32px;
+    width: 100%;
+    z-index: 30;
+}
+
 hr {
     border: 1px solid rgb(180, 180, 180);
     margin: 0;
@@ -94,6 +105,69 @@ hr {
     font-weight: 300;
     font-size: 14px;
     line-height: normal;
+}
+
+.card_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 20px;
+    border: 1px solid rgba(117, 117, 117, 0.2);
+    background-color: rgba(216, 216, 216, 0.2);
+}
+
+.card_info {
+    display: block;
+    padding: 16px 0px 16px 16px;
+    max-width: 300px;
+    position: relative;
+}
+
+.food {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 10px;
+}
+
+.items_counter-wrapper {
+    display: flex;
+    position: absolute;
+    top: 55px;
+    left: 80px;
+}
+
+.items_control {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    padding: 0px 5px;
+    background-color: rgb(102, 212, 103);
+    cursor: pointer;
+}
+
+.items_current {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    padding: 0px 16px;
+    background-color: #FFFFFF;
+}
+
+.price {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+    position: absolute;
+    top: 55px;
+    left: 16px;
+}
+
+.none {
+    display: none;
 }
 
 .basket_footer {

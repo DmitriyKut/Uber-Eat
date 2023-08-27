@@ -31,7 +31,7 @@
       <div class="logo"><img src="../logo.svg" width="125" height="18" /></div>
       <div class="right_part_header">
         <button type="button" class="login">Войти</button>
-        <a href="../basket/index.html"><img src="../basket.png" width="40" height="72" id="basket"/></a>
+        <a href="#"><img src="../basket.png" width="40" height="72" id="basket" data-shop/></a>
       </div>
     </div>
     <div class="restaurant">
@@ -83,7 +83,7 @@
     <div class="content">
       <div class="row" id="row_body">
         <div class="col" id="card">
-          <div class="card_content">
+          <div class="card_content" data-id="01">
             <div class="card_info">
               <div class="food">Сельдь на бородинском хлебе</div>
               <div class="special">С яйцом и огурцом</div>
@@ -93,13 +93,13 @@
                 <div class="items_current" data-counter>0</div>
                 <div class="items_control" data-action="plus">+</div>
               </div>
-              <button class="card_button">Добавить в корзину</button>
+              <button data-cart type="button" class="card_button">Добавить в корзину</button>
             </div>
             <img src="picture/pic1.png" width="170" height="160" class="picture"/>
           </div> 
         </div>
         <div class="col" id="card">
-          <div class="card_content">
+          <div class="card_content" data-id="02">
             <div class="card_info">
               <div class="food">Соленья ассорти</div>
               <div class="price"><b>320 &#8381;</b></div>
@@ -108,13 +108,13 @@
                 <div class="items_current" data-counter>0</div>
                 <div class="items_control" data-action="plus">+</div>
               </div>
-              <button class="card_button">Добавить в корзину</button>
+              <button data-cart type="button" class="card_button">Добавить в корзину</button>
             </div>
             <img src="picture/pic2.png" width="170" height="160" class="picture"/>
           </div> 
         </div>
         <div class="col" id="card">
-          <div class="card_content">
+          <div class="card_content" data-id="03">
             <div class="card_info">
               <div class="food">Грибы маринованные</div>
               <div class="price"><b>300 &#8381;</b></div>
@@ -123,13 +123,13 @@
                 <div class="items_current" data-counter>0</div>
                 <div class="items_control" data-action="plus">+</div>
               </div>
-              <button class="card_button">Добавить в корзину</button>
+              <button data-cart type="button" class="card_button">Добавить в корзину</button>
             </div>
             <img src="picture/pic3.png" width="170" height="160" class="picture"/>
           </div> 
         </div>
         <div class="col" id="card">
-          <div class="card_content">
+          <div class="card_content" data-id="04">
             <div class="card_info">
               <div class="food">Сало домашнее с горчицей</div>
               <div class="price"><b>320 &#8381;</b></div>
@@ -138,13 +138,13 @@
                 <div class="items_current" data-counter>0</div>
                 <div class="items_control" data-action="plus">+</div>
               </div>
-              <button class="card_button">Добавить в корзину</button>
+              <button data-cart type="button" class="card_button">Добавить в корзину</button>
             </div>
             <img src="picture/pic4.png" width="170" height="160" class="picture"/>
           </div> 
         </div>
         <div class="col" id="card">
-          <div class="card_content">
+          <div class="card_content" data-id="05">
             <div class="card_info">
               <div class="food">Малосольная семга</div>
               <div class="price"><b>390 &#8381;</b></div>
@@ -153,13 +153,13 @@
                 <div class="items_current" data-counter>0</div>
                 <div class="items_control" data-action="plus">+</div>
               </div>
-              <button class="card_button">Добавить в корзину</button>
+              <button data-cart type="button" class="card_button">Добавить в корзину</button>
             </div>
             <img src="picture/pic5.png" width="170" height="160" class="picture"/>
           </div> 
         </div>
         <div class="col" id="card">
-          <div class="card_content">
+          <div class="card_content" data-id="06">
             <div class="card_info">
               <div class="food">Язык говяжий с хреном</div>
               <div class="price"><b>350 &#8381;</b></div>
@@ -168,7 +168,7 @@
                 <div class="items_current" data-counter>0</div>
                 <div class="items_control" data-action="plus">+</div>
               </div>
-              <button class="card_button">Добавить в корзину</button>
+              <button data-cart type="button" class="card_button">Добавить в корзину</button>
             </div>
             <img src="picture/pic6.png" width="170" height="160" class="picture"/>
           </div> 
@@ -239,5 +239,6 @@
     </footer>
     <a href="#"><img src="../btnup.svg" width="80" height="80" id="nav"></a>
     <script src="counter.js"></script>
+    <script src="../basket.js"></script>
   </body>
   </html>
