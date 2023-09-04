@@ -100,6 +100,7 @@ hr {
 
 .order {
     padding: 20px 81px 0px 81px;
+    margin-bottom: 20px;
     min-height: 350px;
     font-family: Roboto, sans-serif;
     font-weight: 300;
@@ -111,7 +112,7 @@ hr {
     display: flex;
     justify-content: space-between;
     padding: 0;
-    margin-bottom: 20px;
+    margin-top: 15px;
     border: 1px solid rgba(117, 117, 117, 0.2);
     background-color: rgba(216, 216, 216, 0.2);
 }
