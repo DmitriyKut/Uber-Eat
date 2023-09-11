@@ -81,17 +81,6 @@ a.text {
     background-color: rgba(216, 216, 216, 0.2);
 }
 
-.fix {
-    position: absolute;
-    left: 0px;
-    top: 140px;
-    color: #FFFFFF;
-    background-color: #FFFFFF;
-    height: 32px;
-    width: 100%;
-    z-index: 30;
-}
-
 hr {
     border: 1px solid rgb(180, 180, 180);
     margin: 0;
@@ -102,6 +91,14 @@ hr {
     padding: 20px 81px 0px 81px;
     margin-bottom: 20px;
     min-height: 350px;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: normal;
+}
+
+.noneItems {
+    z-index: 100;
     font-family: Roboto, sans-serif;
     font-weight: 300;
     font-size: 14px;

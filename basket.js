@@ -4,6 +4,7 @@ let infoCounter = new Array();
 let ch_for = 0;
 let ch_enter = 0;
 let repeat = -1;
+let stat = 0;
 const wrapper = document.querySelector('.card_content');
 
 window.addEventListener('click', function(event) {
@@ -57,7 +58,8 @@ window.addEventListener('click', function(event) {
           <img src="../restaurants/${productInfo.imgSrc}" width="170" height="160" class="picture"/>
           </div>`;
           ch_enter++;
-        } else {
+          stat++;
+        } else if (productInfo.counter != 0) {
           //Заменяем counter товара, котоый заказан повторно
           cartItemHTML[repeat] = 
           `<div class="card_content" data-id="${productInfo.id}">
@@ -74,12 +76,13 @@ window.addEventListener('click', function(event) {
           <img src="../restaurants/${productInfo.imgSrc}" width="170" height="160" class="picture"/>
           </div>`;
           repeat = -1;
-        }
-
-        console.log(cartItemHTML);
+        }       
 
         //Создаем хранилище с данными карточек товаров, добавленных в корзину
         localStorage.setItem('want', cartItemHTML.join(''));
+        //Статус корзины (пустая/есть товары)
+        localStorage.setItem('status', stat);
+        console.log(stat);
     }
   // Передаем хранилище на страницу с корзиной
   if (event.target.hasAttribute('data-shop')) {
