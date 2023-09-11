@@ -52,6 +52,7 @@ window.addEventListener('click', function(event) {
                 <div class="items_current" data-counter>${productInfo.counter}</div>
                 <div class="items_control" data-action="plus">+</div>
               </div>
+              <button data-delete type="button" class="delete">Удалить товар</button>
             </div>
           <img src="../restaurants/${productInfo.imgSrc}" width="170" height="160" class="picture"/>
           </div>`;
@@ -68,6 +69,7 @@ window.addEventListener('click', function(event) {
                 <div class="items_current" data-counter>${infoCounter[repeat]}</div>
                 <div class="items_control" data-action="plus">+</div>
               </div>
+              <button data-delete type="button" class="delete">Удалить товар</button>
             </div>
           <img src="../restaurants/${productInfo.imgSrc}" width="170" height="160" class="picture"/>
           </div>`;
@@ -77,7 +79,7 @@ window.addEventListener('click', function(event) {
         console.log(cartItemHTML);
 
         //Создаем хранилище с данными карточек товаров, добавленных в корзину
-        localStorage.setItem('want', cartItemHTML);
+        localStorage.setItem('want', cartItemHTML.join(''));
     }
   // Передаем хранилище на страницу с корзиной
   if (event.target.hasAttribute('data-shop')) {
