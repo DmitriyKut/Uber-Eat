@@ -5,7 +5,9 @@ let ch_for = 0;
 let ch_enter = 0;
 let repeat = -1;
 let stat = 0;
+let quantity = 0;
 const wrapper = document.querySelector('.card_content');
+const quantityIt = document.querySelector('.numberItems');
 
 window.addEventListener('click', function(event) {
 
@@ -23,6 +25,16 @@ window.addEventListener('click', function(event) {
             price: card.querySelector('.price').innerText,
             counter: card.querySelector('[data-counter]').innerText,
         }
+
+        //Колличество заказанных товаров
+        quantity = parseInt(quantity) + parseInt(productInfo.counter);
+        
+        //Проверка и появление кружка с количеством товара
+        if (quantity > 0) {
+          $('.numberItems').removeClass('none');
+        }       
+        quantityIt.innerText = quantity;
+        
         //Цикл запоминает id заказанных товаров и их колличество, а у повторяющихся товаров складывается counter и товар не дублируется
         infoId[ch_for] = productInfo.id;
         infoCounter[ch_for] = productInfo.counter;
@@ -77,12 +89,10 @@ window.addEventListener('click', function(event) {
           </div>`;
           repeat = -1;
         }       
-
         //Создаем хранилище с данными карточек товаров, добавленных в корзину
         localStorage.setItem('want', cartItemHTML.join(''));
         //Статус корзины (пустая/есть товары)
         localStorage.setItem('status', stat);
-        console.log(stat);
     }
   // Передаем хранилище на страницу с корзиной
   if (event.target.hasAttribute('data-shop')) {

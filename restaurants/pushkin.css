@@ -50,6 +50,29 @@ a.text {
     cursor: pointer;
 }
 
+.numberItems {
+    background-color: #ff0000;
+    width: 20px; 
+    height: 20px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    position: fixed;
+    top: 20px;
+    right: 85px;
+    z-index: 60;
+    content: '';
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: normal;
+    text-align: center;
+    padding-top: 2px;
+}
+
+.none {
+    display: none;
+}
+ 
 @media (max-width: 900px) {
     .logo {
         padding: 20px 8px 30px 8px;
