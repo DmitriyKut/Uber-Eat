@@ -223,7 +223,14 @@ hr {
 #number {
     display: block;
     margin: 10px 0px;
-    width: 260px;
+    width: 200px;
+    padding: 5px 0px 5px 10px;
+}
+
+#number::placeholder {
+    font-weight: 200;
+    font-size: 19px;
+    opacity: 0.5;
 }
 
 .text {

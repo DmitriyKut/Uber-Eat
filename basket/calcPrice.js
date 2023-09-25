@@ -16,5 +16,4 @@ function calcPrice() {
         }
     })
     totalPriceEl.innerText = 'Итого: ' + totalPrice + '\u20BD';
-    console.log(totalPriceEl);
 }

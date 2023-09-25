@@ -54,7 +54,7 @@
         <div class="text">Укажите адрес доставки:<span class="star">*</span></div>
         <input type="text" id="adress" name="adress">
         <div class="text">Укажите номер телефона для связи:<span class="star">*</span></div>
-        <input type="text" id="number" name="number">
+        <input type="tel" id="number" name="number" placeholder="+7 (XXX)-XXX-XX-XX" >
         <button class="order_button">Заказать</button>
       </div>
     </div>
@@ -124,5 +124,8 @@
     <script src="../restaurants/counter.js"></script>
     <script src="../basket.js"></script>
     <script src="delete.js"></script>
+    <!--Маска формы телефона-->
+    <script src="inputmask.min.js"></script>
+    <script src="post.js"></script>
   </body>
 </html>
