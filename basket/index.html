@@ -17,7 +17,7 @@
     <!--Подключение JQuery-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <link rel="stylesheet" href="basket.css" />
-
+    
     <title>Uber-Eats-Basket</title>
   </head>
   <body>
@@ -52,7 +52,7 @@
       <div class="basket_footer">
         <div class="sum"></div>
         <div class="text">Укажите адрес доставки:<span class="star">*</span></div>
-        <input type="text" id="adress" name="adress">
+        <input type="text" id="address" name="address" placeholder="г.Москва, ул.Пушечная, д.3">
         <div class="text">Укажите номер телефона для связи:<span class="star">*</span></div>
         <input type="tel" id="number" name="number" placeholder="+7 (XXX)-XXX-XX-XX" >
         <button class="order_button">Заказать</button>
@@ -124,6 +124,7 @@
     <script src="../restaurants/counter.js"></script>
     <script src="../basket.js"></script>
     <script src="delete.js"></script>
+
     <!--Маска формы телефона-->
     <script src="inputmask.min.js"></script>
     <script src="post.js"></script>
