@@ -32,6 +32,22 @@
         <a href="basket/index.html"><img src="basket.png" width="40" height="72" id="basket"/></a>
       </div>
     </div>
+    <div class="login-out">
+      <div class="login-window">
+        <div class="login-display">
+          <div class="login-header">Uber <span class="Eats">Eats</span> Регистрация!</div>
+          <div class="name-text">Как к Вам обращаться?</div>
+          <input type="text" id="login-name" name="login-name" placeholder="Дмитрий" >
+          <div class="mail-text">Вход по электронной почте:</div>
+          <input type="email" id="login-mail" name="login-mail" placeholder="eat@mail.ru" >
+          <div class="phone-text">Вход по номеру телефона:</div>
+          <input type="tel" id="login-phone" name="login-phone" placeholder="+7 (XXX)-XXX-XX-XX" >
+          <div class="button-contanier">
+            <button class="login-button">Вход!</button>
+          </div>
+        </div>       
+      </div>
+    </div>
     <div class="contanier" id="container_body">
       <div class="search-box">
         <input class="search-txt" type="text" name="" placeholder="Поиск по ресторанам и кухням" id="searchRest">
@@ -178,5 +194,10 @@
     </footer>
     <a href="#"><img src="btnup.svg" width="80" height="80" id="nav"></a>
     <script src="search.js"></script>
+    <!--Подключение JQuery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="basket/inputmask.min.js"></script>
+    <script src="basket/post.js"></script>
+    <script src="login.js"></script>
   </body>
 </html>

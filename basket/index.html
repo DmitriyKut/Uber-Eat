@@ -28,6 +28,22 @@
         <a href="../restaurants/index.html"><img src="../shop.png" width="27" height="27" id="basket"/></a>
       </div>
     </div>
+    <div class="login-out">
+      <div class="login-window">
+        <div class="login-display">
+          <div class="login-header">Uber <span class="Eats">Eats</span> Регистрация!</div>
+          <div class="name-text">Как к Вам обращаться?</div>
+          <input type="text" id="login-name" name="login-name" placeholder="Дмитрий" >
+          <div class="mail-text">Вход по электронной почте:</div>
+          <input type="email" id="login-mail" name="login-mail" placeholder="eat@mail.ru" >
+          <div class="phone-text">Вход по номеру телефона:</div>
+          <input type="tel" id="login-phone" name="login-phone" placeholder="+7 (XXX)-XXX-XX-XX" >
+          <div class="button-contanier">
+            <button class="login-button">Вход!</button>
+          </div>
+        </div>       
+      </div>
+    </div>
     <div class="basket">
       <div class="basket_content">
         <b>Ваш заказ:</b>
@@ -124,6 +140,8 @@
     <script src="../restaurants/counter.js"></script>
     <script src="../basket.js"></script>
     <script src="delete.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="../login.js"></script>
 
     <!--Маска формы телефона-->
     <script src="inputmask.min.js"></script>
