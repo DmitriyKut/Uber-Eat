@@ -2,7 +2,9 @@
 const cartWrapper = document.querySelector('.card_content');
 
 //Добавляем карточки со страницы магазина после шаблона
-cartWrapper.insertAdjacentHTML('AfterEnd', localStorage.getItem('want'));
+if (localStorage.getItem('want') != null) {
+    cartWrapper.insertAdjacentHTML('AfterEnd', localStorage.getItem('want'));
+}
 
 //Получение колличества заказанных наименований товаров
 let statusBascket = localStorage.getItem('status');
@@ -40,11 +42,3 @@ window.addEventListener('click', function(event) {
         calcPrice();
     }
 });
-
-//Создаем хранилище с данными карточек товаров, добавленных в корзину
-localStorage.setItem('revers', cartWrapper);
-
- // Передаем хранилище на страницу с корзиной
- window.unload = function() {
- document.location.href = '../restaurants/index.html';
- };

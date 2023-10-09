@@ -186,6 +186,25 @@ a.text {
     transition: 0.3s;
 }
 
+@media (max-width: 575px) {
+    .login-display {
+        width: 90%;
+    }
+
+    .mail-text, .phone-text, .name-text {
+        padding-left: 10px;
+    }
+    
+    #login-phone, #login-mail, #login-name {
+        margin: 0px 10px;
+        font-size: 16px;
+    }
+    
+    #login-mail {
+        height: 35px;
+    }
+}
+
 .search-txt {
     width: 100%;
     padding-top: 24px;

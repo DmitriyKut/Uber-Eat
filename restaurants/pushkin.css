@@ -79,7 +79,13 @@ a.text {
     }
     
     .right_part_header {
-        padding: 2.5px 8px 0px 16px;
+        padding: 2.5px 12px 0px 16px;
+    }
+
+    .numberItems {
+        top: 20px;
+        right: 10px;
+        padding-top: 2px;
     }
 }
 
@@ -89,6 +95,10 @@ a.text {
     }
     .login {
         margin-top: 12px;
+    }
+
+    .numberItems {
+        display: none;
     }
 }
 
@@ -197,6 +207,24 @@ a.text {
     transition: 0.3s;
 }
 
+@media (max-width: 575px) {
+    .login-display {
+        width: 90%;
+    }
+
+    .mail-text, .phone-text, .name-text {
+        padding-left: 10px;
+    }
+    
+    #login-phone, #login-mail, #login-name {
+        margin: 0px 10px;
+        font-size: 16px;
+    }
+    
+    #login-mail {
+        height: 35px;
+    }
+}
 
 /********************************************Header***********************************************************/
 #base {
