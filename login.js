@@ -3,5 +3,3 @@ $(document).ready(function() {
         $('.login-out').toggleClass('active-login');                //Классу .login-out добавляется класс active-login
     });
 });
-
-console.log("HI");

@@ -1,9 +1,9 @@
 // Добавление поиска на всем окне
-window.addEventListener('click', function (event) {
+window.addEventListener('touchstart', function (event) {            //touchstart - событие касания (для моб. устройств)
 
     let counter;
 
-    // Клик был по кнопке?
+    // Касание было по кнопке "+" или "-"?
     if (event.target.dataset.action === 'plus' || event.target.dataset.action === 'minus') {
         
         // Поиск обертки счетчика

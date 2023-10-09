@@ -90,14 +90,7 @@ a.text {
 }
 
 @media (max-width: 575px) {
-    #basket {
-        display: none;
-    }
     .login {
-        margin-top: 12px;
-    }
-
-    .numberItems {
         display: none;
     }
 }
